@@ -26,6 +26,8 @@
 		393ACAAE22988D550094DA6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		393ACAB022988D550094DA6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		393ACAB122988D550094DA6A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		393ACAB8229890370094DA6A /* NSString+debug.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+debug.h"; sourceTree = "<group>"; };
+		393ACAB9229890370094DA6A /* NSString+debug.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+debug.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,8 @@
 				393ACAAD22988D550094DA6A /* LaunchScreen.storyboard */,
 				393ACAB022988D550094DA6A /* Info.plist */,
 				393ACAB122988D550094DA6A /* main.m */,
+				393ACAB8229890370094DA6A /* NSString+debug.h */,
+				393ACAB9229890370094DA6A /* NSString+debug.m */,
 			);
 			path = AltConf1;
 			sourceTree = "<group>";
@@ -285,8 +289,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = WZZ4E5L8EL;
+				CODE_SIGN_STYLE = Manual;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 49M4HHM3X6;
 				INFOPLIST_FILE = AltConf1/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -294,6 +299,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.applicaster.AltConf1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "Applicaster Provisioning - Wildcard";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -302,8 +308,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = WZZ4E5L8EL;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = AltConf1/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -311,6 +317,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.applicaster.AltConf1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
